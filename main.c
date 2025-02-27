@@ -25,6 +25,6 @@ int main(){
     print_conjunto(d);
 
     e = _union(c, d);
-
+    print_conjunto(e);
     return 0;
 }
