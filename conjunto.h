@@ -6,8 +6,8 @@
 typedef int DATO;
 
 typedef struct Conjunto {
-    DATO dato[TAM]
-    short cant
+    DATO dato[TAM];
+    short cant;
 } CONJUNTO;
 
 CONJUNTO conjunto_vacio();
