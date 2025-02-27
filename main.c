@@ -18,11 +18,11 @@ int main(){
     c = agregar(c, 15);
     print_conjunto(c);
 
-    d = agregar(c, 12);
-    d = agregar(c, 22);
-    d = agregar(c, 32);
-    d = agregar(c, 2);
-    print_conjunto(c);
+    d = agregar(d, 12);
+    d = agregar(d, 22);
+    d = agregar(d, 32);
+    d = agregar(d, 2);
+    print_conjunto(d);
 
     e = _union(c, d);
 
