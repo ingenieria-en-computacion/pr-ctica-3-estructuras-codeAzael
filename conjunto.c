@@ -18,11 +18,12 @@ CONJUNTO agregar(CONJUNTO c, DATO d){
 }
 
 bool pertenece(CONJUNTO c, DATO d){
-    if(!es_vacio()){
+    if(!es_vacio(c)){
         for(int i=0; i < c.cant; i++){
             if(c.datos [i]==d) return true;
         }
     }
+    return false;
 }
 
 
@@ -48,7 +49,7 @@ bool es_vacio(CONJUNTO c){
     return c.cant == 0;
 }
 
-int cardinal(CONJUNTO){
+int cardinal(CONJUNTO ){
     return c.cant;
 }
 
