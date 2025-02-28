@@ -1,11 +1,12 @@
 #ifndef __CONJUNTO_H__
-#define __CONJUNTO_H__ 
+#define __CONJUNTO_H__
 #define TAM 1000
 #include <stdbool.h>
 
 typedef int DATO;
 
-typedef struct Conjunto {
+typedef struct Conjunto
+{
     DATO datos[TAM];
     short cant;
 } CONJUNTO;

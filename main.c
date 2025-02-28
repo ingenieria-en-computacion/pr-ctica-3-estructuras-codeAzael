@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "conjunto.h"
 
-int main(){
+int main()
+{
     CONJUNTO c, d, e;
     c = conjunto_vacio();
     d = conjunto_vacio();
@@ -11,6 +12,7 @@ int main(){
     print_conjunto(e);
 
     printf("El conjunto c esta vacio %d\n", es_vacio(c));
+
     c = agregar(c, 2);
     c = agregar(c, 3);
     c = agregar(c, 10);
