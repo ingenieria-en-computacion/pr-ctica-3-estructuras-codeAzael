@@ -14,7 +14,7 @@ COMPLEJOS asignar_real(COMPLEJOS c, double real) {
     return c;
 }
 
-COMPLEJOS asigna_imaginario(COMPLEJOS c, double imaginario) {
+COMPLEJOS asignar_imaginario(COMPLEJOS c, double imaginario) {
     c.imaginario = imaginario;
     return c;
 }
@@ -40,8 +40,8 @@ COMPLEJOS Suma(COMPLEJOS c1, COMPLEJOS c2) {
 
 COMPLEJOS Producto(COMPLEJOS c1, COMPLEJOS c2) {
     COMPLEJOS resultado;
-    resultado.real = c1.real * c2.real - c1.imaginario * c2.imaginario;
-    resultado.imaginario = c1.real * c2.imaginario + c1.imaginario * c2.real;
+    resultado.real = (c1.real * c2.real) - (c1.imaginario * c2.imaginario);
+    resultado.imaginario = (c1.real * c2.imaginario) + (c1.imaginario * c2.real);
     return resultado;
 }
 
@@ -50,4 +50,8 @@ COMPLEJOS Conjugado(COMPLEJOS c) {
     resultado.real = c.real;
     resultado.imaginario = -c.imaginario;
     return resultado;
+}
+
+void print_complejo(COMPLEJOS c) {
+    printf("%.2f + %.2fi\n", c.real, c.imaginario);
 }
